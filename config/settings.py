@@ -48,7 +48,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+DJANGO_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -56,6 +56,16 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
+THIRD_APPS = []
+PROJECT_APPS = [
+    "users.apps.UsersConfig",
+    "foods.apps.FoodsConfig",
+    "calories.apps.CaloriesConfig",
+    "articles.apps.ArticlesConfig",
+]
+
+
+INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
