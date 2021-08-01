@@ -62,6 +62,7 @@ PROJECT_APPS = [
     "foods.apps.FoodsConfig",
     "calories.apps.CaloriesConfig",
     "articles.apps.ArticlesConfig",
+    "lists.apps.ListsConfig",
 ]
 
 
