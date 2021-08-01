@@ -130,3 +130,6 @@ uploads/
 
 .history/
 node_modules/
+
+#secrets.json
+secrets.json
