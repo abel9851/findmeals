@@ -63,6 +63,7 @@ PROJECT_APPS = [
     "calories.apps.CaloriesConfig",
     "articles.apps.ArticlesConfig",
     "lists.apps.ListsConfig",
+    "core.apps.CoreConfig",
 ]
 
 
