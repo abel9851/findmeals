@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+
+class Food(models.Model):
+    """Food Model Definition"""
+
+    name = models.CharField(max_length=50)

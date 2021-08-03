@@ -7,3 +7,4 @@ class User(AbstractUser):
 
     avatar = models.ImageField(blank=True)
     bio = models.TextField(default="", blank=True)
+
