@@ -7,4 +7,4 @@ class FoodAdmin(admin.ModelAdmin):
 
     """Food Admin Definition"""
 
-    pass
+    list_display = ("name",)

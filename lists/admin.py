@@ -2,9 +2,14 @@ from django.contrib import admin
 from . import models
 
 
-@admin.register(models.list)
+@admin.register(models.List)
 class ListAdmin(admin.ModelAdmin):
 
     """List Admin Definition"""
 
-    pass
+    list_display = (
+        "name",
+        "user",
+    )
+    search_fields = ("name",)
+    filter_horizontal = ("foods",)
