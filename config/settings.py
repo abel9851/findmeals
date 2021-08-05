@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-import os
+
 import json
 from pathlib import Path
 from django.core.exceptions import ImproperlyConfigured
@@ -156,7 +156,7 @@ MEDIA_URL = "/media/"
 
 # STATIC
 
-STATICFILES_DIRS = BASE_DIR / "static"
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 STATIC_URL = "/static/"
 
