@@ -14,3 +14,8 @@ class List(core_models.TimeStampedModel):
 
     def __str_(self):
         return self.name
+
+    def count_foods(self):
+        return self.foods.count()
+
+    count_foods.short_description = "Number of Foods"
