@@ -56,7 +56,7 @@ DJANGO_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
-THIRD_APPS = []
+THIRD_APPS = ["django_seed"]
 PROJECT_APPS = [
     "users.apps.UsersConfig",
     "foods.apps.FoodsConfig",
